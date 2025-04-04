@@ -1,10 +1,5 @@
 #who-i-am{
     background-color: var(--mainColor3);
-    height: 100vh;
-    padding: 5vh 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #about-container{
@@ -24,6 +19,7 @@
         max-height: 80%;
         border-radius: 50%;
         object-fit: cover;
+        object-position: top;
     }
 }
 

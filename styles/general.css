@@ -10,3 +10,11 @@ body{
     padding-top: 8vh;
     overflow-x: hidden;
 }
+
+section{
+    height: 100vh;
+    padding: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
