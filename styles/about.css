@@ -1,0 +1,44 @@
+#who-i-am{
+    background-color: var(--mainColor3);
+    height: 100vh;
+    padding: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-container{
+    display: flex;
+    width: 100%;
+    gap: 4vw;
+}
+
+#brand-image{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        width: clamp(40px, 100%, 400px);
+        max-height: 80%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+#my-desc{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+    .name{
+        font-weight: bold;
+        font-size: clamp(20px, 4vw, 80px);
+    }
+    
+    .desc{
+        line-height: 140%;
+    }
+}

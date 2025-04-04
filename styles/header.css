@@ -1,34 +1,26 @@
 header{
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 12vh;
-  display: flex;
-  background: linear-gradient(
-    60deg,
-    rgb(0, 0, 88), 
-    rgb(50, 50, 189)
-    );
-  padding: 0 7vw;
+    display: flex;
+    background-color: var(--mainColor1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: right;
+    align-items: center;
+    height: 8vh;
 }
 
-header nav{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  column-gap: 20px;
-  font-size: 3vh;
+nav{
+    display: flex;
+    height: 100%;
 }
 
-header a{
-  cursor: pointer;
-  
-}
-
-header a:hover{
-  background-color: #112231;
+.nav{
+    padding: 0 4vw;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &:hover{
+        background-color: var(--mainColor2);
+    }
 }

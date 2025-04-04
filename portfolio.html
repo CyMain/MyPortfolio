@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/colors.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/services.css">
+</head>
+<body>
+    <header>
+        <!--Conatains Nav bar-->
+        <nav>
+            <!--Contains "About", "Contact Me", "Projects"-->
+            <div class="nav">About</div>
+            <div class="nav">Services</div>
+            <div class="nav">Projects</div>
+        </nav>
+    </header>
+    <main>
+        <!--Contains the main content of each site-->
+        <section id="who-i-am">
+            <div id="about-container">
+                <div id="brand-image">
+                    <!--My Image or brand Image. Could even be my github pfp-->
+                    <img src="./assets/images/sample-images/derpyBf.jpg">
+                </div>
+                <div id="my-desc">
+                    <div class="name">
+                        Cyrus Okikiola
+                    </div>
+                    <article class="desc">
+                        I am an upcoming developer in key areas.
+                        I offer many services, including developing a design tailored to your needs and developing a site from scratch,
+                        video editing, and even software development to help build apps and such.
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="my-services">
+            <h2>
+                My Services
+            </h2>
+            <div class="services">
+                <!--column flexbox containing all services on mobile. Row flexbox for wide screens-->
+                <div class="service">
+                    <!--Contains service name and description-->
+                    <h3>
+                        Frontend Development
+                    </h3>
+                    <p>
+                        Use HTML, CSS and JavaScript to build a website from scratch for you.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="projects-section">
+            <!--Contains all my main projects-->
+            <div>
+                <!--Default template for all projects
+                Div1 Contains two divs. Div1,1 contains a sample image of the project
+                Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
+                <div>
+                    <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+                </div>
+                <div>
+                    <h2>
+                        Guessy! The Online Guessing Game!
+                    </h2>
+                    <article>
+                        <p>
+                            Guessy is as expected, an online guessing game, where the player can be engaged
+                            in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                            So much to find out!
+                        </p>
+                    </article>
+                    <button>
+                        Go To Site
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <!--Contains my contacts: LinkedIn, GitHub, Instagram, e.t.c-->
+        </div>
+        <div>
+            <!--contains my phone number stating to reach me on whatsapp and telegram.-->
+        </div>
+        <div>
+            <!--my pfp on the right side of the footer-->
+        </div>
+    </footer>
+</body>
+</html>
