@@ -20,6 +20,9 @@ nav{
     display: flex;
     align-items: center;
     height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.12s;
     &:hover{
         background-color: var(--mainColor2);
     }

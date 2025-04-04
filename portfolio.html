@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cyrus</title>
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/colors.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/projects.css">
 </head>
 <body>
     <header>
         <!--Conatains Nav bar-->
         <nav>
             <!--Contains "About", "Contact Me", "Projects"-->
-            <div class="nav">About</div>
-            <div class="nav">Services</div>
-            <div class="nav">Projects</div>
+            <a class="nav">About</a>
+            <a class="nav" href="#my-services">Services</a>
+            <a class="nav">Projects</a>
         </nav>
     </header>
     <main>
@@ -53,15 +54,25 @@
                             Frontend Development
                         </h3>
                         <p>
-                            Use HTML, CSS and JavaScript to build a website from scratch for you.
+                            Will use HTML, CSS and JavaScript to build a website from scratch for you.
                         </p>
                     </div>
+                    <div class="service">
+                        <!--Contains service name and description-->
+                        <h3>
+                            Frontend Development
+                        </h3>
+                        <p>
+                            Will use HTML, CSS and JavaScript to build a website from scratch for you.
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </section>
         <section id="projects-section">
             <!--Contains all my main projects-->
-            <div>
+            <div id="projects-section-container">
                 <!--Default template for all projects
                 Div1 Contains two divs. Div1,1 contains a sample image of the project
                 Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
