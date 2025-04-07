@@ -16,14 +16,17 @@
         <!--Conatains Nav bar-->
         <nav>
             <!--Contains "About", "Contact Me", "Projects"-->
-            <a class="nav">About</a>
-            <a class="nav" href="#my-services">Services</a>
-            <a class="nav">Projects</a>
+            <a class="nav" href="#who-i-am-target">About</a>
+            <a class="nav" href="#my-services-target">Services</a>
+            <a class="nav" href="#projects-section-target">Projects</a>
         </nav>
     </header>
     <main>
         <!--Contains the main content of each site-->
         <section id="who-i-am">
+            <h6 id="who-i-am-target">
+
+            </h6>
             <div id="about-container">
                 <div id="brand-image">
                     <!--My Image or brand Image. Could even be my github pfp-->
@@ -42,6 +45,9 @@
             </div>
         </section>
         <section id="my-services">
+            <h6 id="my-services-target">
+
+            </h6>
             <div id="services-container">
                 <h2>
                     My Services
@@ -71,28 +77,56 @@
             </div>
         </section>
         <section id="projects-section">
+            <h6 id="projects-section-target">
+
+            </h6>
             <!--Contains all my main projects-->
-            <div id="projects-section-container">
-                <!--Default template for all projects
-                Div1 Contains two divs. Div1,1 contains a sample image of the project
-                Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
-                <div>
-                    <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+            <div id="projects">
+                <div class="project">
+                    <!--Default template for all projects
+                    Div1 Contains two divs. Div1,1 contains a sample image of the project
+                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
+                    <div class="display-image">
+                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+                    </div>
+                    <div class="project-desc">
+                        <h2>
+                            Guessy! The Online Guessing Game!
+                        </h2>
+                        <article>
+                            <p>
+                                Guessy is as expected, an online guessing game, where the player can be engaged
+                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                                So much to find out!
+                            </p>
+                        </article>
+                        <button onclick="window.location.href='cymain.github.io/Guessy/intro.html'">
+                            Go To Site
+                        </button>
+                    </div>    
                 </div>
-                <div>
-                    <h2>
-                        Guessy! The Online Guessing Game!
-                    </h2>
-                    <article>
-                        <p>
-                            Guessy is as expected, an online guessing game, where the player can be engaged
-                            in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                            So much to find out!
-                        </p>
-                    </article>
-                    <button>
-                        Go To Site
-                    </button>
+                <div class="project">
+                    <!--Default template for all projects
+                    Div1 Contains two divs. Div1,1 contains a sample image of the project
+                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
+                    <div class="display-image">
+                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+                    </div>
+                    <div class="project-desc">
+                        <h2>
+                            Guessy! The Online Guessing Game!
+                        </h2>
+                        <article>
+                            <p>
+                                Guessy is as expected, an online guessing game, where the player can be engaged
+                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                                So much to find out!
+                            </p>
+                        </article>
+                        <button>
+                            Go To Site
+                        </button>
+                    </div>    
                 </div>
             </div>
         </section>

@@ -8,6 +8,7 @@ header{
     justify-content: right;
     align-items: center;
     height: 8vh;
+    z-index: 100;
 }
 
 nav{
