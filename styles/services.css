@@ -8,27 +8,82 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 4vh;
-    
     .services{
-        display:flex;
-        flex-direction: column;
-        gap: 2vh;
-            
+        gap: 4vh;
+        place-items: center;
         .service{
+            background-color: var(--mainColor1);
+            padding: 10px;
+            border-radius: 20px;
+            overflow: hidden;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            place-items: center;
+            place-content: center;
             gap: 2vh;
-
-            h3{
-                color: red;
+            
+            max-width: 550px;
+            box-shadow:8px 8px 6px 2px rgba(0, 0, 0, 0.4);
+            figure{
+                width: 40px;
+                height: 100%;
+                display: flex;
+                place-items: center;
+                place-content: center;
+                img{
+                    background-color: var(--mainColor2);
+                    border-radius: 20px;
+                    padding: 10px;
+                }
             }
             
-            p{
-                margin-left: 2vw;
+            .service-desc{
+                display: flex;
+                flex-direction: column;
+                
+                h3{
+                    
+                }
+                
+                p{
+
+                }
             }
         }
     
     }
 
+}
+
+@media (min-width:700.5px) {
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .service{
+            min-height: 150px;
+        }
+
+        .service-desc{
+            gap: 10px;
+        }
+    }
+}
+@media (max-width:700px) {
+    .services{
+        display: flex;
+        flex-direction: column;
+
+        .service{
+            
+        }
+        .service-desc{
+            gap: 5px;
+            h3{
+                font-size: 3vw;
+            }
+            p{
+                font-size: 2.5vw;
+            }
+        }
+    }
 }
