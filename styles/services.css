@@ -6,11 +6,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    place-items: center;
     gap: 4vh;
+    h2{
+        align-self: center;
+    }
     .services{
         gap: 4vh;
         place-items: center;
+        place-self: center;
         .service{
             background-color: var(--mainColor1);
             padding: 10px;

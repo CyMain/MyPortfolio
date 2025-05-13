@@ -5,6 +5,7 @@
 
 #about-container{
     display: flex;
+    margin-top: 8vh;
     width: 100%;
     gap: 4vw;
 }
@@ -30,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 4%;
+    padding-bottom: 10vh;
     .name{
         font-weight: bold;
         font-size: clamp(20px, 4vw, 80px);
@@ -41,5 +43,18 @@
 }
 
 @media (max-width:700px) {
+    #about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #my-desc{
+            .name{
+                font-size: 5vw;
+            }
+            .desc{
+                font-size: 3vw;
+            }
+        }
+    }
     
 }
