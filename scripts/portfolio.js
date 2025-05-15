@@ -1,18 +1,28 @@
+let aboutMe = {
+    brandImage:"./assets/images/sample-images/derpyBf.jpg",
+    name: "Cyrus Okikiola",
+    desc: `I’m a frontend developer with a strong eye for design, a passion for clean,
+                         responsive user interfaces, and the technical skills to bring them to life.
+                         Proficient in HTML, CSS, JavaScript, and modern frameworks like React,
+                          I build fast, accessible, and interactive web experiences. I'm ready to contribute to any team with a detail-oriented approach, a user-first mindset, and the ability to turn design concepts into production-ready code.`,
+}
+
+let services = [
+    {
+        name:"Web Development",
+        desc:"Will use HTML, CSS and JavaScript to build a website of your design for you.",
+        icon:"./assets/icons/code-alt-light.png",
+    },
+]
+
 let projects = [
     {
-        projectName:"Guessy! The Online Guessing Game!",
+        projectName: "Guessy! The Online Guessing Game!",
         desc: `Guessy is as expected, an online guessing game, where the player can be engaged
                 in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
                 So much to find out!`,
-        imageURL:`./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
-        projectURL:"https://guessy-pearl.vercel.app",
-    },{
-        projectName:"Guessy! The Online Guessing Game!",
-        desc: `Guessy is as expected, an online guessing game, where the player can be engaged
-                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                So much to find out!`,
-        imageURL:`./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
-        projectURL:"https://guessy-pearl.vercel.app",
+        imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
+        projectURL: "https://guessy-pearl.vercel.app",
     },
 ]
 
@@ -187,8 +197,9 @@ let footer = `
         </div>
 `;
 
+renderSite();
 
-function renderSite(){
+function renderSite() {
     let html = `
         <!--Contains the main content of each site-->
         <section id="who-i-am">
@@ -198,16 +209,14 @@ function renderSite(){
             <div id="about-container">
                 <div id="brand-image">
                     <!--My Image or brand Image. Could even be my github pfp-->
-                    <img src="./assets/images/sample-images/derpyBf.jpg">
+                    <img src="${aboutMe.brandImage}">
                 </div>
                 <div id="my-desc">
-                    <div class="name">
-                        Cyrus Okikiola
-                    </div>
+                    <h2 class="name">
+                        ${aboutMe.name}
+                    </h2>
                     <article class="desc">
-                        I am an upcoming developer in key areas.
-                        I offer many services, including developing a design tailored to your needs and developing a site from scratch,
-                        video editing, and even software development to help build apps and such.
+                        ${aboutMe.desc}
                     </article>
                 </div>
             </div>
@@ -222,25 +231,7 @@ function renderSite(){
                 </h2>
                 <div class="services">
                     <!--column flexbox containing all services on mobile. Row flexbox for wide screens-->
-                    <div class="service">
-                        <!--Contains service name and description-->
-                        <h3>
-                            Frontend Development
-                        </h3>
-                        <p>
-                            Will use HTML, CSS and JavaScript to build a website from scratch for you.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <!--Contains service name and description-->
-                        <h3>
-                            Frontend Development
-                        </h3>
-                        <p>
-                            Will use HTML, CSS and JavaScript to build a website from scratch for you.
-                        </p>
-                    </div>
-                    
+                    ${renderServices()}
                 </div>
             </div>
         </section>
@@ -248,18 +239,71 @@ function renderSite(){
             <h6 id="projects-section-target">
 
             </h6>
+            <h2>
+                My Work
+            </h2>
             <!--Contains all my main projects-->
             <div id="projects">
-               ${renderProjects()}
+                ${renderProjects()}
             </div>
+        </section>
+        <section id="contact-me-section">
+            <h6 id="contacts-section-target">
+
+            </h6>
+            <h2>Send Me A Message</h2>
+            <form class="contact-form">
+                <fieldset>
+                    <legend>Name:</legend>
+                    <input type="text" placeholder="Enter your name..." required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Phone Number:</legend>
+                    <input type="tel" name="" id="" placeholder="Your phone number..." required>
+                </fieldset>
+                <fieldset>
+                    <legend>Email:</legend>
+                    <input type="email" name="" id="" placeholder="Enter your email..." required>
+                </fieldset>
+                <fieldset>
+                    <legend>Type your message:</legend>
+                    <textarea name="" id="" placeholder="Type your message"></textarea>
+                </fieldset>
+                <button type="submit" class="message-send-button">Send</button>
+            </form>
         </section>
     `;
     document.querySelector('main').innerHTML = html;
 }
 
-function renderProjects(){
+function renderServices(){
     let html = ``;
-    projects.forEach(project =>{
+    services.forEach(service => {
+        html += `
+        <div class="service">
+            <figure>
+                <!--icon for each sevice.-->
+                <img src="${service.icon}">
+            </figure>
+            <div class="service-desc">
+                <!--Contains service name and description-->
+                <h3>
+                    ${service.name}
+                </h3>
+                <p>
+                    ${service.desc}
+                </p>
+            </div>
+        </div>
+        `;
+    })
+    return html;
+}
+
+function renderProjects() {
+    let html = ``;
+    projects.forEach(project => {
         html += `
             <div class="project">
                 <!--Default template for all projects
@@ -287,15 +331,20 @@ function renderProjects(){
     return html;
 }
 
-function closeMenu(){
+function closeMenu() {
     document.querySelector('.side-menu').style.transform = 'translateX(200%)';
     document.querySelector('.black-screen').style.transform = 'translateX(200%)';
 }
 
-function openMenu(){
+function openMenu() {
     document.querySelector('.side-menu').style.display = 'flex';
     document.querySelector('.side-menu').style.transform = 'translateX(0%)';
     document.querySelector('.black-screen').style.transform = 'translateX(0%)';
+}
+function dropDown(){
+    document.querySelector(`${this} ul`).style.display='flex';
+    document.querySelector(`${this} ul`).style.opacity=1;
+    document.querySelector(`${this} ul`).style.animation='dropdown 0.12s ease-out forwards';
 }
 
 document.querySelector('.close-menu').addEventListener('click', () => {
