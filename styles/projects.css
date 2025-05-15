@@ -4,6 +4,12 @@
     */
     background-color: var(--mainColor3);
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    > h2{
+        margin-bottom: 20px;
+    }
 }
 
 #projects{
@@ -24,7 +30,7 @@
         */
         overflow: hidden;
         position: relative;
-        max-height: 80vh;
+        max-height: 80dvh;
         max-width: 700px;
         display:flex;
         flex-direction: column;
@@ -64,7 +70,6 @@
             align-items: center;
             justify-content: center;
             background-color: var(--mainColor3);
-            padding-bottom: 2%;
             height: 40%;
             bottom: 0;
             left: 0;
@@ -73,10 +78,11 @@
 
             &:hover{
                 height: 50%;
+                padding: initial 4% 20px 4%;
                 background-color: var(--mainColor2);
 
                 article{
-                    line-height: 120%;
+                    line-height: 100%;
                     display:flex;
                 }
     

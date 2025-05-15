@@ -3,7 +3,7 @@ footer{
         display: flex;
         height: 100%;
         background-color: black;
-        padding: 4vh 4vw;
+        padding: 4dvh 4vw;
         justify-content: space-between;
 
         .contacts{
