@@ -4,17 +4,21 @@
     box-sizing: border-box;
     font-family:"Open Sans", sans-serif;
     letter-spacing: 0.1rem;
-    color: var(--textColor1);
+    color: rgb(var(--textColor1));
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
     overflow-x: hidden;
-    background-color: var(--mainColor1);
+    background-color: rgb(var(--mainColor1));
 }
 
 section{
     min-height: 100dvh;
-    padding: 5dvh 10vw;
+    padding: 4dvh 8vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

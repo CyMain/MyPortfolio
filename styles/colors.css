@@ -1,12 +1,12 @@
 :root{
-    --mainColor1:#616161;
-    --mainColor2:#353535;
-    --mainColor3:#242424;
-    --mainColor4:#3b3b3b;
-    --textColor1:whitesmoke;
-    --textColor2:#363636;
-    --buttonColor1:#0f0f0f;
-    --buttonColor2:#1f1f1f;
-    --footerColor1:rgb(160, 160, 160);
-    --footerColor2:rgb(224, 224, 224);
+    --mainColor1:97, 97, 97;
+    --mainColor2:53, 53, 53;
+    --mainColor3:36, 36, 36;
+    --mainColor4:59, 59, 59;
+    --textColor1:245, 245, 245;
+    --textColor2:54, 54, 54;
+    --buttonColor1:15, 15, 15;
+    --buttonColor2:31, 31, 31;
+    --footerColor1:160, 160, 160;
+    --footerColor2:224, 224, 224;
 }

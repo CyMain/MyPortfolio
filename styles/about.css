@@ -1,5 +1,5 @@
 #who-i-am{
-    background-color: var(--mainColor3);
+    background-color: rgb(var(--mainColor3));
     padding-top: 8dvh;
 }
 
@@ -37,7 +37,7 @@
     }
     
     .desc{
-        line-height: 140%;
+        line-height: 1.2rem;
     }
 }
 
@@ -48,12 +48,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 4dvh;
+        gap: 2dvh;
         #my-desc{
             .name{
-                font-size: 3.5vw;
+                font-size: 5vw;
+                text-align: center;
             }
             .desc{
-                font-size: 2.5vw;
+                font-size: clamp(10px,2.5vw, 100%);
             }
         }
     }

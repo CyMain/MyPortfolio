@@ -9,12 +9,9 @@ footer{
         .contacts{
             display: flex;
             h2{
-                color: var(--footerColor1);
-            }
-            *{
+                color: rgb(var(--footerColor1));
                 cursor: pointer;
             }
-    
             div{
                 width: 100%;
             }
@@ -24,10 +21,17 @@ footer{
             }
 
             li{
-                
+                cursor: pointer;
                 margin-top: 2%;
+                padding: 10px;
                 padding-left: 2%;
                 list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &:hover{
+                    background-color: rgba(var(--mainColor2), 0.4 );
+                }
             }
         }
 
@@ -52,11 +56,32 @@ footer{
 
         .contacts{
             flex-direction: column;
-            h2{
-                border-bottom: 1px solid var(--footerColor1); 
-            }
+            position: relative;
             div{
                 margin-bottom: 2%;
+            }
+            .find-me-on, .contact-me{
+                overflow: hidden;
+                h2{
+                    position: relative;
+                    background-color: black;
+                    z-index: 2;
+                    border-bottom: 1px solid rgb(var(--footerColor1)); 
+                }
+                
+                ul{
+                    position: relative;
+                    display: none;
+                    opacity: 0;
+                    z-index: 1;
+                }
+                &:hover{
+                    ul{
+                        display:flex;
+                        opacity: 1;
+                        animation: dropdown 0.12s ease-out forwards;
+                    }
+                }
             }
         }
 

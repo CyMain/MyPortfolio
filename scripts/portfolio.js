@@ -16,7 +16,177 @@ let projects = [
     },
 ]
 
-renderSite();
+let header = `
+    <!--Conatains Nav bar-->
+        <nav>
+            <!--Contains "About", "Contact Me", "Projects"-->
+            <a class="nav" href="#who-i-am-target">About</a>
+            <a class="nav" href="#my-services-target">Services</a>
+            <a class="nav" href="#projects-section-target">Projects</a>
+        </nav>
+`;
+
+let main = `
+    
+        <!--Contains the main content of each site-->
+        <section id="who-i-am">
+            <h6 id="who-i-am-target">
+
+            </h6>
+            <div id="about-container">
+                <div id="brand-image">
+                    <!--My Image or brand Image. Could even be my github pfp-->
+                    <img src="./assets/images/sample-images/derpyBf.jpg">
+                </div>
+                <div id="my-desc">
+                    <h2 class="name">
+                        Cyrus Okikiola
+                    </h2>
+                    <article class="desc">
+                        I’m a frontend developer with a strong eye for design, a passion for clean,
+                         responsive user interfaces, and the technical skills to bring them to life.
+                         Proficient in HTML, CSS, JavaScript, and modern frameworks like React,
+                          I build fast, accessible, and interactive web experiences. I'm ready to contribute to any team with a detail-oriented approach, a user-first mindset, and the ability to turn design concepts into production-ready code.
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="my-services">
+            <h6 id="my-services-target">
+
+            </h6>
+            <div id="services-container">
+                <h2>
+                    My Services
+                </h2>
+                <div class="services">
+                    <!--column flexbox containing all services on mobile. Row flexbox for wide screens-->
+                    <div class="service">
+                        <figure>
+                            <!--icon for each sevice.-->
+                            <img src="./assets/icons/code-alt-light.png">
+                        </figure>
+                        <div class="service-desc">
+                            <!--Contains service name and description-->
+                            <h3>
+                                Web Development
+                            </h3>
+                            <p>
+                                Will use HTML, CSS and JavaScript to build a website of your design for you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <figure>
+                            <!--icon for each sevice.-->
+                            <img src="./assets/icons/code-alt-light.png">
+                        </figure>
+                        <div class="service-desc">
+                            <!--Contains service name and description-->
+                            <h3>
+                                Web Development
+                            </h3>
+                            <p>
+                                Will use HTML, CSS and JavaScript to build a website of your design for you.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="projects-section">
+            <h6 id="projects-section-target">
+
+            </h6>
+            <h2>
+                My Work
+            </h2>
+            <!--Contains all my main projects-->
+            <div id="projects">
+                <div class="project">
+                    <!--Default template for all projects
+                    Div1 Contains two divs. Div1,1 contains a sample image of the project
+                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
+                    <div class="display-image">
+                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+                    </div>
+                    <div class="project-desc">
+                        <h2>
+                            Guessy! The Online Guessing Game!
+                        </h2>
+                        <article>
+                            <p>
+                                Guessy is as expected, an online guessing game, where the player can be engaged
+                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                                So much to find out!
+                            </p>
+                        </article>
+                        <button onclick="window.location.href='https://guessy-pearl.vercel.app/'">
+                            Go To Site
+                        </button>
+                    </div>    
+                </div>
+                <div class="project">
+                    <!--Default template for all projects
+                    Div1 Contains two divs. Div1,1 contains a sample image of the project
+                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
+                    <div class="display-image">
+                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
+                    </div>
+                    <div class="project-desc">
+                        <h2>
+                            Guessy! The Online Guessing Game!
+                        </h2>
+                        <article>
+                            <p>
+                                Guessy is as expected, an online guessing game, where the player can be engaged
+                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                                So much to find out!
+                            </p>
+                        </article>
+                        <button>
+                            Go To Site
+                        </button>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    
+`;
+
+let footer = `
+    <div class="footer-container">
+            <div class="contacts">
+                <div class="find-me-on">
+                    <!--Contains my contacts: LinkedIn, GitHub, Instagram, e.t.c-->
+                    <h2>
+                        Find Me On
+                    </h2>
+                    <ul class="contact-list">
+                        <li>LinkedIn <i class='bx bxl-linkedin-square'></i></li>
+                        <li>Github <i class='bx bxl-github' ></i></li>
+                    </ul>
+                </div>
+                <div class="contact-me">
+                    <!--contains my email and my phone number stating to reach me on whatsapp and telegram.-->
+                    <h2>
+                        Contact Me
+                    </h2>
+                    <ul class="contact details">
+                        <li>Email: <span>okikiolacyrus@gmail.com</span> <i class='bx bx-envelope' ></i></li>
+                        <li>Phone Number: <i class='bx  bx-phone'  style='color:#ffffff'></i> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pfp">
+                <!--my pfp on the right side of the footer-->
+                <img src="./assets/images/sample-images/derpyBf.jpg">
+            </div>
+        </div>
+`;
+
 
 function renderSite(){
     let html = `
@@ -116,3 +286,23 @@ function renderProjects(){
     })
     return html;
 }
+
+function closeMenu(){
+    document.querySelector('.side-menu').style.transform = 'translateX(200%)';
+    document.querySelector('.black-screen').style.transform = 'translateX(200%)';
+}
+
+function openMenu(){
+    console.log('ugh')
+    document.querySelector('.side-menu').style.transform = 'translateX(0%)';
+    document.querySelector('.black-screen').style.transform = 'translateX(0%)';
+}
+
+document.querySelector('.close-menu').addEventListener('click', () => {
+    closeMenu();
+});
+
+
+document.querySelector('#menu-icon').addEventListener('click', () => {
+    openMenu();
+});

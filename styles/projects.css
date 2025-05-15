@@ -2,7 +2,7 @@
     /*
     The entire projects section
     */
-    background-color: var(--mainColor3);
+    background-color: rgb(var(--mainColor3));
     height: 100%;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@
         padding: 10% 5%;
 
         &:hover{
-            background-color: var(--mainColor2);
+            background-color: rgb(var(--mainColor2));
             transform: translateY( -2%);
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
         }
@@ -69,7 +69,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: var(--mainColor3);
+            background-color: rgb(var(--mainColor3));
             height: 40%;
             bottom: 0;
             left: 0;
@@ -79,7 +79,7 @@
             &:hover{
                 height: 50%;
                 padding: initial 4% 20px 4%;
-                background-color: var(--mainColor2);
+                background-color: rgb(var(--mainColor2));
 
                 article{
                     line-height: 100%;
@@ -116,13 +116,13 @@
                 display: none;
                 align-items: center;
                 justify-content: center;
-                background-color: var(--buttonColor1);
+                background-color: rgb(var(--buttonColor1));
                 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
                 border: none;
                 border-radius: 20px;
 
                 &:hover{
-                    background-color: var(--buttonColor2);
+                    background-color: rgb(var(--buttonColor2));
                 }
             }
         }

@@ -14,17 +14,42 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/projects.css">
-
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <!--Conatains Nav bar-->
-        <nav>
-            <!--Contains "About", "Contact Me", "Projects"-->
-            <a class="nav" href="#who-i-am-target">About</a>
-            <a class="nav" href="#my-services-target">Services</a>
-            <a class="nav" href="#projects-section-target">Projects</a>
-        </nav>
+        <div class="wide-view">
+            <nav>
+                <!--Contains "About", "Contact Me", "Projects"-->
+                <a class="nav" href="#who-i-am-target">About</a>
+                <a class="nav" href="#my-services-target">Services</a>
+                <a class="nav" href="#projects-section-target">Projects</a>
+                <a class="nav" href="#contacts-section-target">Send a Message</a>
+            </nav>
+        </div>
+        <div class="smol-view">
+            <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+            <div class="side-menu">
+                <div class="black-screen"></div>
+                <button class="close-menu">
+                    <i class='bx bx-x' id="icon"></i>
+                </button>
+                <nav>
+                    <!--Contains "About", "Contact Me", "Projects"-->
+                    <a class="nav" href="#who-i-am-target">About</a>
+                    <a class="nav" href="#my-services-target">Services</a>
+                    <a class="nav" href="#projects-section-target">Projects</a>
+                    <a class="nav" href="#contacts-section-target">Send a Message</a>
+                </nav>
+                <div class="media-links">
+                    <a href="https://github.com/CyMain" class="media-link"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/cyrus-okikiola/" class="media-link"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <!--Contains the main content of each site-->
@@ -151,6 +176,32 @@
                 </div>
             </div>
         </section>
+        <section id="contact-me-section">
+            <h6 id="contacts-section-target">
+
+            </h6>
+            <h2>Send Me A Message</h2>
+            <form class="contact-form">
+                <fieldset>
+                    <legend>Name:</legend>
+                    <input type="text" placeholder="Enter your name..." required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Phone Number:</legend>
+                    <input type="tel" name="" id="" placeholder="Your phone number..." required>
+                </fieldset>
+                <fieldset>
+                    <legend>Email:</legend>
+                    <input type="email" name="" id="" placeholder="Enter your email..." required>
+                </fieldset>
+                <fieldset>
+                    <legend>Type your message:</legend>
+                    <textarea name="" id="" placeholder="Type your message"></textarea>
+                </fieldset>
+                <button type="submit" class="message-send-button">Send</button>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-container">
@@ -160,9 +211,9 @@
                     <h2>
                         Find Me On
                     </h2>
-                    <ul>
-                        <li>LinkedIn</li>
-                        <li>Github</li>
+                    <ul class="contact-list">
+                        <li>LinkedIn <i class='bx bxl-linkedin-square'></i></li>
+                        <li>Github <i class='bx bxl-github' ></i></li>
                     </ul>
                 </div>
                 <div class="contact-me">
@@ -170,9 +221,9 @@
                     <h2>
                         Contact Me
                     </h2>
-                    <ul>
-                        <li>Email: <span>okikiolacyrus@gmail.com</span></li>
-                        <li>Phone Number: </li>
+                    <ul class="contact details">
+                        <li>Email: <span>okikiolacyrus@gmail.com</span> <i class='bx bx-envelope' ></i></li>
+                        <li>Phone Number:<i class='bx  bx-phone'  style='color:#ffffff'></i><i class='bx bxl-whatsapp'></i></li>
                     </ul>
                 </div>
             </div>
@@ -183,6 +234,8 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./scripts/portfolio.js">
+        
+    </script>    
 </body>
 </html>

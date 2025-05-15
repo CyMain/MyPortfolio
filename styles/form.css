@@ -1,0 +1,43 @@
+#contact-me-section{
+    padding-top: 1dvh;
+    align-items: center;
+    h2{
+        margin-bottom: 30px;
+    }
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 8px 10px 12px 6px rgba(0, 0, 0, 0.295), 
+                -8px -10px 12px 6px rgba(128, 128, 128, 0.295);
+    fieldset{
+        border: none;
+        padding: 10px;
+        input, textarea{
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            color: rgb(var(--textColor2));
+        }
+    }
+    .message-send-button{
+        cursor: pointer;
+        background-color: rgb(var(--mainColor4));
+        border: none;
+        border-radius: 10px;
+        margin-left: 10px;
+        width: 100px;
+        height: 50px;
+
+        &:hover{
+            background-color: rgba(var(--buttonColor2), 0.8);
+        }
+    }
+}
