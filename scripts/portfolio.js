@@ -293,7 +293,7 @@ function closeMenu(){
 }
 
 function openMenu(){
-    console.log('ugh')
+    document.querySelector('.side-menu').style.display = 'flex';
     document.querySelector('.side-menu').style.transform = 'translateX(0%)';
     document.querySelector('.black-screen').style.transform = 'translateX(0%)';
 }
