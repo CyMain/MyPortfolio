@@ -18,7 +18,7 @@
     justify-content: center;
     img{
         width: clamp(40px, 100%, 400px);
-        max-height: 80%;
+        aspect-ratio: 1/1;
         border-radius: 50%;
         object-fit: cover;
         object-position: top;
@@ -43,6 +43,9 @@
 }
 
 @media (max-width:700px) {
+    #who-i-am{
+
+    }
     #about-container{
         display: flex;
         flex-direction: column;
