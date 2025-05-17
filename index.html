@@ -158,23 +158,23 @@
 
             </h6>
             <h2>Send Me A Message</h2>
-            <form class="contact-form">
+            <form action="https://formsubmit.co/okikiolacyrus@gmail.com" method="POST" id="contact-form">
                 <fieldset>
                     <legend>Name:</legend>
-                    <input type="text" placeholder="Enter your name..." required>
+                    <input type="text" name="name" placeholder="Enter your name..." required>
                 </fieldset>
                 
                 <fieldset>
-                    <legend>Phone Number:</legend>
-                    <input type="tel" name="" id="" placeholder="Your phone number..." required>
+                     <legend>Phone Number:</legend>
+                     <input type="tel" name="phone-number" id="" placeholder="Your phone number...">
                 </fieldset>
                 <fieldset>
                     <legend>Email:</legend>
-                    <input type="email" name="" id="" placeholder="Enter your email..." required>
+                    <input type="email" name="email" id="" placeholder="Enter your email..." required>
                 </fieldset>
                 <fieldset>
                     <legend>Type your message:</legend>
-                    <textarea name="" id="" placeholder="Type your message"></textarea>
+                    <textarea name="message" id="message" placeholder="Type your message"></textarea>
                 </fieldset>
                 <button type="submit" class="message-send-button">Send</button>
             </form>
@@ -212,7 +212,6 @@
         </div>
     </footer>
     <script src="./scripts/portfolio.js">
-        
-    </script>    
+    </script>
 </body>
 </html>

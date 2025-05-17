@@ -1,3 +1,5 @@
+
+
 let aboutMe = {
     brandImage:"./assets/images/sample-images/derpyBf.jpg",
     name: "Cyrus Okikiola",
@@ -50,135 +52,6 @@ let header = `
             <a class="nav" href="#my-services-target">Services</a>
             <a class="nav" href="#projects-section-target">Projects</a>
         </nav>
-`;
-
-let main = `
-    
-        <!--Contains the main content of each site-->
-        <section id="who-i-am">
-            <h6 id="who-i-am-target">
-
-            </h6>
-            <div id="about-container">
-                <div id="brand-image">
-                    <!--My Image or brand Image. Could even be my github pfp-->
-                    <img src="./assets/images/sample-images/derpyBf.jpg">
-                </div>
-                <div id="my-desc">
-                    <h2 class="name">
-                        Cyrus Okikiola
-                    </h2>
-                    <article class="desc">
-                        I’m a frontend developer with a strong eye for design, a passion for clean,
-                         responsive user interfaces, and the technical skills to bring them to life.
-                         Proficient in HTML, CSS, JavaScript, and modern frameworks like React,
-                          I build fast, accessible, and interactive web experiences. I'm ready to contribute to any team with a detail-oriented approach, a user-first mindset, and the ability to turn design concepts into production-ready code.
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="my-services">
-            <h6 id="my-services-target">
-
-            </h6>
-            <div id="services-container">
-                <h2>
-                    My Services
-                </h2>
-                <div class="services">
-                    <!--column flexbox containing all services on mobile. Row flexbox for wide screens-->
-                    <div class="service">
-                        <figure>
-                            <!--icon for each sevice.-->
-                            <img src="./assets/icons/code-alt-light.png">
-                        </figure>
-                        <div class="service-desc">
-                            <!--Contains service name and description-->
-                            <h3>
-                                Web Development
-                            </h3>
-                            <p>
-                                Will use HTML, CSS and JavaScript to build a website of your design for you.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <figure>
-                            <!--icon for each sevice.-->
-                            <img src="./assets/icons/code-alt-light.png">
-                        </figure>
-                        <div class="service-desc">
-                            <!--Contains service name and description-->
-                            <h3>
-                                Web Development
-                            </h3>
-                            <p>
-                                Will use HTML, CSS and JavaScript to build a website of your design for you.
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section id="projects-section">
-            <h6 id="projects-section-target">
-
-            </h6>
-            <h2>
-                My Work
-            </h2>
-            <!--Contains all my main projects-->
-            <div id="projects">
-                <div class="project">
-                    <!--Default template for all projects
-                    Div1 Contains two divs. Div1,1 contains a sample image of the project
-                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
-                    <div class="display-image">
-                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
-                    </div>
-                    <div class="project-desc">
-                        <h2>
-                            Guessy! The Online Guessing Game!
-                        </h2>
-                        <article>
-                            <p>
-                                Guessy is as expected, an online guessing game, where the player can be engaged
-                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                                So much to find out!
-                            </p>
-                        </article>
-                        <button onclick="window.location.href='https://guessy-pearl.vercel.app/'">
-                            Go To Site
-                        </button>
-                    </div>    
-                </div>
-                <div class="project">
-                    <!--Default template for all projects
-                    Div1 Contains two divs. Div1,1 contains a sample image of the project
-                    Div1,2 contains a project title and then a description(maybe include a button to go to project site?)-->
-                    <div class="display-image">
-                        <img src="./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png">
-                    </div>
-                    <div class="project-desc">
-                        <h2>
-                            Guessy! The Online Guessing Game!
-                        </h2>
-                        <article>
-                            <p>
-                                Guessy is as expected, an online guessing game, where the player can be engaged
-                                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                                So much to find out!
-                            </p>
-                        </article>
-                        <button>
-                            Go To Site
-                        </button>
-                    </div>    
-                </div>
-            </div>
-        </section>
-    
 `;
 
 let footer = `
@@ -268,23 +141,23 @@ function renderSite() {
 
             </h6>
             <h2>Send Me A Message</h2>
-            <form class="contact-form">
+            <form action="https://formsubmit.co/okikiolacyrus@gmail.com" method="POST" id="contact-form">
                 <fieldset>
                     <legend>Name:</legend>
-                    <input type="text" placeholder="Enter your name..." required>
+                    <input type="text" name="name" placeholder="Enter your name..." required>
                 </fieldset>
                 
                 <fieldset>
-                    <legend>Phone Number:</legend>
-                    <input type="tel" name="" id="" placeholder="Your phone number..." required>
+                     <legend>Phone Number:</legend>
+                     <input type="tel" name="phone-number" id="" placeholder="Your phone number...">
                 </fieldset>
                 <fieldset>
                     <legend>Email:</legend>
-                    <input type="email" name="" id="" placeholder="Enter your email..." required>
+                    <input type="email" name="email" id="" placeholder="Enter your email..." required>
                 </fieldset>
                 <fieldset>
                     <legend>Type your message:</legend>
-                    <textarea name="" id="" placeholder="Type your message"></textarea>
+                    <textarea name="message" id="message" placeholder="Type your message"></textarea>
                 </fieldset>
                 <button type="submit" class="message-send-button">Send</button>
             </form>
