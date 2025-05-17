@@ -19,11 +19,9 @@
     cursor: pointer;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
+    gap: 20px;
+    
     .project{  
         /*
         Holds the style for every project
@@ -33,7 +31,7 @@
         max-height: 80dvh;
         max-width: 700px;
         display:flex;
-        flex-direction: column;
+        flex-direction: column;;
         justify-content: center;
         align-items:center;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);

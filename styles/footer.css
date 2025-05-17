@@ -70,17 +70,11 @@ footer{
                 }
                 
                 ul{
+                    transition: all 0.12s;
                     position: relative;
                     display: none;
                     opacity: 0;
                     z-index: 1;
-                }
-                &:hover{
-                    ul{
-                        display:flex;
-                        opacity: 1;
-                        animation: dropdown 0.12s ease-out forwards;
-                    }
                 }
             }
         }

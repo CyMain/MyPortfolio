@@ -24,6 +24,22 @@ let projects = [
         imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
         projectURL: "https://guessy-pearl.vercel.app",
     },
+    {
+        projectName: "Guessy! The Online Guessing Game!",
+        desc: `Guessy is as expected, an online guessing game, where the player can be engaged
+                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                So much to find out!`,
+        imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
+        projectURL: "https://guessy-pearl.vercel.app",
+    },
+    {
+        projectName: "Guessy! The Online Guessing Game!",
+        desc: `Guessy is as expected, an online guessing game, where the player can be engaged
+                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
+                So much to find out!`,
+        imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
+        projectURL: "https://guessy-pearl.vercel.app",
+    },
 ]
 
 let header = `
@@ -341,11 +357,47 @@ function openMenu() {
     document.querySelector('.side-menu').style.transform = 'translateX(0%)';
     document.querySelector('.black-screen').style.transform = 'translateX(0%)';
 }
-function dropDown(){
-    document.querySelector(`${this} ul`).style.display='flex';
-    document.querySelector(`${this} ul`).style.opacity=1;
-    document.querySelector(`${this} ul`).style.animation='dropdown 0.12s ease-out forwards';
+function dropDown(element){
+    element.nextElementSibling.style.display='flex';
+    element.nextElementSibling.style.opacity=1;
+    element.nextElementSibling.style.animation='dropdown 0.12s ease-out forwards';
+    element.addEventListener('click', () =>{
+        const h2 = event.target;
+        throwUp(h2);
+    }, {once: true});
 }
+function throwUp(element){
+    element.nextElementSibling.style.opacity=0;
+    element.nextElementSibling.style.transform='translateY(-20%)';
+    setTimeout(() =>{
+        element.nextElementSibling.style.display='none';
+        element.nextElementSibling.style.transform='translateY(0%)';
+    },140);
+    element.addEventListener('click', () =>{
+        const h2 = event.target;
+        dropDown(h2);
+    }, {once: true});
+}
+
+function dropDownControl(){
+    if(window.innerWidth < 700){
+            document.querySelector('.find-me-on').addEventListener('click', () =>{
+            const h2 = event.target;
+            dropDown(h2);
+            }, {once: true})
+
+            document.querySelector('.contact-me').addEventListener('click', () =>{
+                const h2 = event.target;
+                dropDown(h2);
+            }, {once: true})
+    }
+
+}
+
+dropDownControl();
+window.addEventListener('resize', () => {
+    dropDownControl();    
+})
 
 document.querySelector('.close-menu').addEventListener('click', () => {
     closeMenu();
