@@ -27,7 +27,7 @@ let projects = [
         projectURL: "https://guessy-pearl.vercel.app",
     },{
         projectName: "Browser Extension Manager",
-        desc: `A little test of skill. This site uses HTML, CSS and JavaScript to make an interactive extension manager for all your broser extensions`,
+        desc: `A little test of skill. This site uses HTML, CSS and JavaScript to make an interactive extension manager for all your browser extensions`,
         imageURL: `../assets/images/project-images/ExtManager/extManager1.png`,
         projectURL: "https://browser-extension-manager-cymains-projects.vercel.app",
     },
