@@ -86,8 +86,6 @@ let footer = `
         </div>
 `;
 
-renderSite();
-
 function renderSite() {
     let html = `
         <!--Contains the main content of each site-->
