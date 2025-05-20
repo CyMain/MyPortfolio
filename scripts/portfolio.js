@@ -25,20 +25,9 @@ let projects = [
                 So much to find out!`,
         imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
         projectURL: "https://guessy-pearl.vercel.app",
-    },
-    {
-        projectName: "Guessy! The Online Guessing Game!",
-        desc: `Guessy is as expected, an online guessing game, where the player can be engaged
-                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                So much to find out!`,
-        imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
-        projectURL: "https://guessy-pearl.vercel.app",
-    },
-    {
-        projectName: "Guessy! The Online Guessing Game!",
-        desc: `Guessy is as expected, an online guessing game, where the player can be engaged
-                in fun guessing random words based on the hints displayed. Even secret comments and easter eggs exist.
-                So much to find out!`,
+    },{
+        projectName: "Browser Extension Manager",
+        desc: `A little test of skill. This site uses HTML, CSS and JavaScript to make an interactive extension manager for all your broser extensions`,
         imageURL: `./assets/images/project-images/GuessyScreenshots/GuessySampleProject.png`,
         projectURL: "https://guessy-pearl.vercel.app",
     },
