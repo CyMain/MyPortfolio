@@ -57,11 +57,7 @@
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
                             -4px -4px 10px rgba(255, 255, 255, 0.158);
                 
-                .skill-icon{
-                    svg{
-                        fill: rgba(255, 0, 0, 0.445);    
-                    }
-                    
+                .skill-icon{                    
                     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
                                 -10px -10px 20px rgba(255, 255, 255, 0.158);
                 }
@@ -75,10 +71,6 @@
                             -4px -4px 10px rgba(255, 255, 255, 0.158);
                 
                 .skill-icon{
-                    svg{
-                        fill: rgba(0, 38, 255, 0.445);
-                    }
-                    
                     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
                                 -10px -10px 20px rgba(255, 255, 255, 0.158);
                 }
@@ -92,10 +84,6 @@
                             -4px -4px 10px rgba(255, 255, 255, 0.158);
                 
                 .skill-icon{
-                    svg{
-                        fill: rgba(255, 166, 0, 0.445);
-                    }
-                    
                     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
                                 -10px -10px 20px rgba(255, 255, 255, 0.158);
                 }
@@ -108,9 +96,6 @@
                             -4px -4px 10px rgba(255, 255, 255, 0.158);
                 
                 .skill-icon{
-                    svg{
-                        fill: rgba(0, 238, 255, 0.445);    
-                    }
                     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
                                 -10px -10px 20px rgba(255, 255, 255, 0.158);
                 }
