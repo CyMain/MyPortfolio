@@ -3,7 +3,7 @@
 let aboutMe = {
     brandImage:"./assets/images/mypfp2.jpg",
     name: "Cyrus Okikiola",
-    desc: `Aspiring frontend developer focused on building clean, responsive interfaces with HTML, CSS, and JavaScript. Always learning and improving user experiences.`,
+    desc: `Junior frontend developer with a flair for responsive design and video editing—blending code and creativity to build engaging digital experiences.`,
 }
 
 let services = [
@@ -84,15 +84,20 @@ function renderSite() {
             <div id="about-container">
                 <div id="brand-image">
                     <!--My Image or brand Image. Could even be my github pfp-->
-                    <img src="${aboutMe.brandImage}">
+                    <img src="./assets/images/mypfp2.jpg" alt="Cyrus' image">
                 </div>
                 <div id="my-desc">
                     <h2 class="name">
-                        ${aboutMe.name}
+                        Cyrus Okikiola
                     </h2>
                     <article class="desc">
-                        ${aboutMe.desc}
+                        Aspiring frontend developer focused on building clean, responsive interfaces with HTML, CSS, and JavaScript. Always learning and improving user experiences.
                     </article>
+                    <div class="options">
+                        <button class="option"><i class='bx bxl-github'></i></button>
+                        <button class="option"><i class='bx bxl-linkedin-square'></i></button>
+                        <button class="cv-download">Download CV</button>
+                    </div>
                 </div>
             </div>
         </section>
