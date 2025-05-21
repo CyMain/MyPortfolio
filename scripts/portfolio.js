@@ -1,7 +1,7 @@
 
 
 let aboutMe = {
-    brandImage:"./assets/images/sample-images/derpyBf.jpg",
+    brandImage:"../assets/images/mypfp2.jpg",
     name: "Cyrus Okikiola",
     desc: `I’m a frontend developer with a strong eye for design, a passion for clean,
                          responsive user interfaces, and the technical skills to bring them to life.
