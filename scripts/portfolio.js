@@ -278,6 +278,16 @@ function dropDownControl(){
                 const h2 = event.target;
                 dropDown(h2);
             }, {once: true})
+    }else{
+        document.querySelector('.find-me-on').removeEventListener('click', () =>{
+            const h2 = event.target;
+            throwUp(h2);
+        }, {once: true})
+
+        document.querySelector('.contact-me').removeEventListener('click', () =>{
+            const h2 = event.target;
+            throwUp(h2);
+        }, {once: true})
     }
 
 }
