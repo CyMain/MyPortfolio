@@ -12,6 +12,26 @@ let services = [
         desc:"Will use HTML, CSS and JavaScript to build a website of your design for you.",
         icon:"./assets/icons/code-alt-light.png",
     },
+    {
+        name:"Landing Page Creation",
+        desc:"Clean, fast, and conversion-focused pages.",
+        icon:"./assets/icons/code-alt-light.png",
+    },
+    {
+        name:"Website Recreation",
+        desc:"Improving design, structure, and usability of existing websites",
+        icon:"./assets/icons/code-alt-light.png",
+    },
+    {
+        name:"Figma to HTML/CSS",
+        desc:"Converting design files to pixel-perfect, responsive code.",
+        icon:"./assets/icons/code-alt-light.png",
+    },
+    {
+        name:"Creative Extras",
+        desc:"Will add animations or interactive UI (with CSS or JS libraries) to your site.",
+        icon:"./assets/icons/code-alt-light.png",
+    },
 ]
 
 let projects = [
