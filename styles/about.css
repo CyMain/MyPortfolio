@@ -65,13 +65,21 @@
                     color: rgb(var(--mainColor2));
                 }
             }
+            svg{
+                width: 2rem;
+                height: auto;
+                fill: rgb(var(--mainColor1));
+                &:hover{
+                    fill: black;
+                }
+            }
         }
 
 
         .option:nth-child(2){
             &:hover{
                 i{
-                    color: rgb(0, 0, 128);
+                    color: rgb(0, 70, 128);
                 }
             }
         }
