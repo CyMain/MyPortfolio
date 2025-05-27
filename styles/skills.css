@@ -48,6 +48,43 @@
                 flex-direction: column;
                 justify-content: center;
                 gap: 10px;
+            }
+            .skill-level{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                .skill-level-text{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+                .skill-level-prog{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .skill-level-bar{
+                        width: 100%;
+                        height: 10px;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        border-radius: 5px;
+                        overflow: hidden;
+                        position: relative;
+                        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2),
+                                    inset 0 0 10px rgba(255, 255, 255, 0.158),
+                                    2px 2px 5px rgba(0, 0, 0, 0.4),
+                                    -2px -2px 5px rgba(255, 255, 255, 0.2);
+                        
+                        
+                        .skill-level-progress{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            background-color: #fff;
+                            width: 0%; /* This will be set dynamically */
+                            transition: width 0.3s ease;
+                        }
+                    }
+                }
                 
             }
         }
