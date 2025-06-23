@@ -72,8 +72,16 @@ footer{
             }
         }
     }
+    li:hover, a:hover{
+        .footer-svg{
+            fill: rgb(var(--footerColor2));
+        }
+    }
 }
 
+.footer-svg{
+    fill: rgb(var(--mainColor1));
+}
 
 @media (max-width:700px) {
     .footer-container{
