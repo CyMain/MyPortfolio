@@ -1,7 +1,34 @@
 #who-i-am{
-    background-color: rgb(var(--mainColor3));
+    position: relative;
     padding-top: 8dvh;
+    
+    background-image: url('/assets/images/herobackground.jpg');
+    background: linear-gradient(180deg, rgb(var(--mainColor3), 0), rgb(var(--mainColor3)));
 }
+
+.hero-background, .hero-drop{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-background{
+    background-image: url('/assets/images/herobackground.webp');
+    z-index: -2;
+}
+
+.hero-drop{
+    background: linear-gradient(180deg, rgba(var(--mainColor3), 0.5) 60%, rgb(var(--mainColor3)));
+    z-index: -1;
+}
+
+
 
 #about-container{
     display: flex;

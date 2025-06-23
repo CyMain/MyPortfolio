@@ -32,6 +32,14 @@
             *{
                 transition: all 0.3s ease;
             }
+            &:hover{
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
+                            -4px -4px 10px rgba(255, 255, 255, 0.158);
+                .skill-icon{                    
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                                -10px -10px 20px rgba(255, 255, 255, 0.158);
+                }
+            }
             .skill-icon{
                 border-radius: 10px;
                 flex: 1;
@@ -92,51 +100,32 @@
         .html-skill{
             &:hover{
                 background-color: rgba(255, 0, 0, 0.342);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
-                            -4px -4px 10px rgba(255, 255, 255, 0.158);
-                
-                .skill-icon{                    
-                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
-                                -10px -10px 20px rgba(255, 255, 255, 0.158);
-                }
             }   
         }
         
         .css-skill{
             &:hover{
                 background-color: rgba(0, 26, 255, 0.342);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
-                            -4px -4px 10px rgba(255, 255, 255, 0.158);
-                
-                .skill-icon{
-                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
-                                -10px -10px 20px rgba(255, 255, 255, 0.158);
                 }
-            }   
         }
-        
         .js-skill{
             &:hover{
                 background-color: rgba(255, 217, 0, 0.342);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
-                            -4px -4px 10px rgba(255, 255, 255, 0.158);
-                
-                .skill-icon{
-                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
-                                -10px -10px 20px rgba(255, 255, 255, 0.158);
-                }
             }   
         }
         .react-skill{
             &:hover{
                 background-color: rgba(0, 225, 255, 0.342);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 
-                            -4px -4px 10px rgba(255, 255, 255, 0.158);
-                
-                .skill-icon{
-                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
-                                -10px -10px 20px rgba(255, 255, 255, 0.158);
-                }
+            }   
+        }
+        .bootstrap-skill{
+            &:hover{
+                background-color: rgba(174, 0, 255, 0.342);
+            }   
+        }
+        .tailwind-skill{
+            &:hover{
+                background-color: rgba(0, 188, 255, 0.342);
             }   
         }
     }
