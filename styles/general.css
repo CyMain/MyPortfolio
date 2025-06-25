@@ -18,6 +18,33 @@ html {
 body{
     overflow-x: hidden;
     background-color: rgb(var(--mainColor1));
+    position: relative;
+}
+
+.site-alert{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 10dvh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .site-alert-box{
+        background-color: rgb(var(--mainColor2));
+        min-width: 10rem;
+        width: 30%;
+        min-height: 4rem;
+        height: 10dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 1rem;
+    }
 }
 
 section{
